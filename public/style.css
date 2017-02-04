@@ -1,0 +1,875 @@
+/*
+Theme Name: حراج سيارات
+Version: 1.0
+*/
+
+
+/**
+ * Table of Contents
+ * ----------------------------------------------------------------------------
+ * 0. General  
+ * 1. Header   
+ * 2. slider   
+ * 3. prodects-search 
+ * 4. cars-type    
+ * 5. Footer
+ * 6. Media Queries 
+ */
+
+
+/**
+ * 0. General
+ * ----------------------------------------------------------------------------
+ */
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskufiarabic.css);
+::selection {
+  background: #0E5BA4;
+  color: #FFF;
+}
+*{
+    font-family: 'Noto Sans Kufi Arabic', sans-serif;
+}
+::-webkit-input-placeholder{
+    color: #0E5BA4;
+}
+.scroll-top{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 4em;
+    height: 1.5em;
+    line-height: 3.2rem;
+    font-size: 20px;
+    color: #fcb813;
+    background-color: #0E5BA4;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    z-index: 999;
+    margin-left: auto;
+    margin-right: auto;
+}
+.scroll-top a{
+    color: #fcb813
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999
+}
+.over-lay{
+    background: #0E5BA4;
+    color: #FFF;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 999999;    
+}
+.ybile {
+  color: #fffeec;
+  text-align: center;
+  background: url(images/logo.png) no-repeat center /30%;
+  line-height: 3em;
+  padding-top: 2em;
+  margin-bottom: 10px;
+  margin-top: 100px;
+  padding-bottom: 2em;
+  text-transform: uppercase;
+  height: 50%
+}
+.spinner {
+  margin: 10px auto 0;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #FDB813;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  -moz-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  -ms-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  -o-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  -moz-animation-delay: -0.32s;
+  -ms-animation-delay: -0.32s;
+  -o-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  -moz-animation-delay: -0.16s;
+  -ms-animation-delay: -0.16s;
+  -o-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+
+/**
+ * 1. header
+ * ----------------------------------------------------------------------------
+ */
+
+.navbar-brand{
+    display: none
+}
+.english-web{
+  display: none   
+}
+.container-fluid{
+    background: #0e5ba4
+}
+.navbar{
+    border: 0;
+    margin: 0;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+    color: #fcb813;
+    background: none;
+}
+.navbar-default .navbar-nav > .active > a:after{
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    content: '';
+    border-style: solid;
+    left: calc(50% - 10px);
+    bottom: 0;
+    border-width: 10px;
+    border-color: transparent transparent #FFF transparent;
+}
+.navbar-default .navbar-nav > .active > a i,
+.navbar-default .navbar-nav > .active > a:hover i,
+.navbar-default .navbar-nav > .active > a:focus i{
+    visibility: visible
+}
+
+.navbar-default .navbar-nav > li > a{
+    padding: 15px 0;
+    font-weight: bold;
+    color: #FFF;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.navbar-default .navbar-nav > li > .insert-bubble:hover:before,
+.navbar-default .navbar-nav > li > .insert-bubble:active:before,
+.navbar-default .navbar-nav > li > .insert-bubble:focus:before{
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    content: '';
+    border-style: solid;
+    left: calc(50% - 10px);
+    bottom: 0;
+    border-width: 10px;
+    border-color: transparent transparent #FFF transparent;
+} 
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:active{
+    color: #fcb813
+}
+.navbar-default .navbar-nav > li > a:hover i,
+.navbar-default .navbar-nav > li > a:focus i,
+.navbar-default .navbar-nav > li > a:active i{
+        visibility: visible   
+}
+.navbar-default .navbar-nav > li{
+    padding: 0 10px;
+}
+.navbar-default .navbar-nav > li > a > i{
+    padding-right: 5px;
+    visibility: hidden;
+}
+.navbar-default .navbar-nav > li > a.reg{
+    padding: 0 0 0 10px;
+    border-left: 2px solid #fcb813;
+}
+.navbar-default .navbar-nav > li.registry,
+.navbar-default .navbar-nav > li.registry + li{
+        padding: 8px 10px;
+}
+.navbar-default .navbar-nav > li > .log.btn{
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+}
+.navbar-default .navbar-nav > li.english{
+    padding: 15px 10px;
+}
+.navbar-default .navbar-nav > li > a.web-english:hover,
+.navbar-default .navbar-nav > li > a.web-english:active,
+.navbar-default .navbar-nav > li > a.web-english:focus{
+    background: #fcb813 ;
+    color: #FFF;
+}
+.navbar-default .navbar-nav > li > a.web-english{
+    font-size: 12px;
+    letter-spacing: 3px;
+    padding: 0 5px;
+    color: #fcb813;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.web-logo{
+    text-align: center;
+    position: relative;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.web-logo img{
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/**
+ * 2. slider
+ * ----------------------------------------------------------------------------
+ */
+
+.carousel{
+     margin: 30px 45px;
+        box-shadow: 0 0 10px grey;
+    border-radius: 10px;
+}
+.carousel-inner{
+    height: 500px;
+}
+.show-menu {
+	text-decoration: none;
+	color: #fff;
+	background: #231F20;
+	text-align: center;
+	padding: 20px 0;
+	display: none;
+    margin: 0;
+}
+.carousel-inner > .item  img{
+    width:100%;
+    height: 500px;
+    border-radius: 10px;
+}
+.carousel-control{
+    top:300px;
+}
+.carousel-caption{
+    background-color: rgba(35, 31, 32, 0.37);
+    right: 60px;
+    width: 50%;
+    bottom: 100px;
+    height: auto;
+    padding: 20px 20px 40px;
+}
+.carousel-caption a{
+    background: #0E5BA4;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+.carousel-caption p{
+    color: #FFF;
+    font-size: 17px;
+    font-weight: bold;
+    overflow: hidden;
+    margin-bottom: 30px;
+    line-height: 35px;
+    text-shadow: 0 3px 1px rgba(14, 91, 164, 0.7);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    
+}
+.carousel-caption p a{
+    cursor: pointer;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.58);
+    padding: 3px 6px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.carousel-caption p a:hover,
+.carousel-caption p a:active,
+.carousel-caption p a:focus{
+    text-decoration: none;
+    background: none;
+    color:#FFF;
+}
+
+.carousel-control.left,
+.carousel-control.right{
+    opacity: inherit;
+    background: none;
+    top: 0;
+    width: auto;
+}
+.carousel-control.left{
+    left: -20px
+}
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right{
+    color: #fff;
+    cursor: pointer;
+    padding: 4px 0;
+    height: 40px;
+    width: 40px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background: #FDB813
+}
+.carousel-control .glyphicon-chevron-left:hover,
+.carousel-control .glyphicon-chevron-left:focus,
+.carousel-control .glyphicon-chevron-left:active,
+.carousel-control .glyphicon-chevron-right:hover,
+.carousel-control .glyphicon-chevron-right:focus,
+.carousel-control .glyphicon-chevron-right:active{
+    background:#0E5BA4;
+    color:#FFF;
+    border: none;
+}
+.carousel-indicators li{
+    width: 12px;
+    height: 12px;
+    background-color: #FFF
+}
+.carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    background-color: #FDB813;
+    border-color: #FDB813;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.carousel:hover .carousel-control.left span,
+.carousel:hover .carousel-control.right span{
+    background: #0E5BA4;
+    border-radius: 50px
+}
+.carousel:hover .carousel-indicators .active{
+    background-color: #0E5BA4;
+    border-color: #0E5BA4;
+}
+.carousel:hover .carousel-inner .active .carousel-caption a{
+    background: #FDB813;
+}
+.carousel-inner .active .carousel-caption a{
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.carousel:hover .carousel-inner .active .carousel-caption p{
+    text-shadow: 0 3px 1px rgba(252, 184, 19, 0.66);
+}
+
+
+
+/**
+ * 3. prodects-search
+ * ----------------------------------------------------------------------------
+ */
+
+.prodects-search{
+    margin: 45px;
+    text-align: center;
+    background: #f5f5f5;
+    border: 1px solid #acacac;
+    padding: 40px;
+    overflow: auto;
+}
+.web-header h2{
+    margin: 0;
+    display: inline;
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 10px;
+    vertical-align: middle;
+    color: #0E5BA4;
+}
+.prodects-search form{
+    margin-top: 40px
+}
+.prodects-search form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    background: #FFF url(images/arrow.png) no-repeat  0px;
+}
+.prodects-search form select,
+.prodects-search form input{
+    width: 30%;
+    height: 45px;
+    margin: 20px 10px;
+    padding: 5px;
+    font-weight: bold;
+    color: #0E5BA4;
+    border: 1px solid #d1d1d1;
+    font-size: 16px;
+    outline-color: #FCB813;
+}
+.prodects-search form select option{
+    font-weight: bold;
+}
+.prodects-search form input[type="submit"]{
+    background: #363636;
+    color: #FFF;  
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.prodects-search form input[type="submit"]:hover,
+.prodects-search form input[type="submit"]:focus,
+.prodects-search form input[type="submit"]:active{
+    background: #0E5BA4;
+    color: #FCB813;  
+}
+.prodects-logo{
+    overflow: hidden;
+}
+.prodects {
+    max-width: 130px;
+    max-height: 70px;
+    margin-right: 100px;
+    z-index: 1;
+}
+.prodects img{
+    max-width: 100px;
+    max-height: 70px;
+    cursor: pointer;
+}
+.prodects-header{
+    float: none;
+    z-index: 0;
+}
+.cars-brand{
+    overflow: hidden;
+    margin-top: 40px;
+    text-align: right;
+}
+.brand-type{
+    padding: 0 80px 0 0;
+    border-right: 2px solid #cacaca;
+    min-height: 150px;
+}
+.cars-brand ul{
+    margin: 0
+}
+.cars-brand div:first-child{
+    border: 0
+}
+.cars-brand ul li{
+    padding: 0 0 5px 0;
+    color: #FCB813;
+    font-size: 15px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.cars-brand ul li a{
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    color: #0E5BA4;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.cars-brand ul li a:hover,
+.cars-brand ul li a:focus,
+.cars-brand ul li a:active{
+    color: #FCB813;
+    padding-right: 10px;
+}
+.cars-brand ul li:hover,
+.cars-brand ul li:focus,
+.cars-brand ul li:active{
+    color: #0E5BA4;
+}
+
+/**
+ * 4. cars-type
+ * ----------------------------------------------------------------------------
+ */
+
+.cars-type{
+    margin: 45px;
+    padding: 0 40px;
+    text-align: center;
+    overflow: auto;
+}
+.img-type{
+    overflow: hidden;
+    margin: 40px 0 0;
+}
+.img-type img{
+    width: 80px;
+    height: 80px;
+}
+.img-type div{
+    width: 20%;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    background: #f5f5f5;
+    border: 1px solid #acacac;
+}
+
+
+
+/**
+ * 5. footer
+ * ----------------------------------------------------------------------------
+ */
+
+.footer{
+    padding: 20px 45px;
+    background: #282828;
+    overflow: auto;
+}
+.footer p:first-child{
+    float: right;
+}
+.footer p{
+    float: left;
+    color: #FCB813;
+    font-size: 15px;
+    margin: 0;
+    font-weight: bold;  
+}
+.footer p a{
+    padding-right: 5px; 
+    color: #FCB813;
+}
+.footer p a:hover,
+.footer p a:active,
+.footer p a:focus{
+    text-shadow: 0 3px 1px rgba(14, 91, 164, 0.7);
+    text-decoration: none;
+}
+
+
+
+/**
+ * 6. fORM + Modal
+ * ----------------------------------------------------------------------------
+ */
+
+ .btn-blue {
+    background-color: #337ab7;
+    color: #fff;
+ }
+
+ input:not([type='submit']) {
+    display: block;
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+ }
+
+ input[type='radio'], input[type='checkbox'] {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    padding: 0;
+    margin: 10px 0;
+ }
+
+
+
+
+/**
+ * 6. Media Queries 
+ * ----------------------------------------------------------------------------
+ */
+
+@media screen and (max-width : 767px){
+   .navbar-brand{
+       display: inline;
+       margin: 8px 20px;
+       padding: 0;
+       height: auto
+    }
+    .nav{
+        margin: 0;
+    }
+    .navbar-default .navbar-nav > .active > a:after{
+        content: none;
+    }
+    .navbar-default .navbar-nav > li > .insert-bubble:hover:before,
+    .navbar-default .navbar-nav > li > .insert-bubble:active:before,
+    .navbar-default .navbar-nav > li > .insert-bubble:focus:before{
+        content: none;
+    }
+    .english-web{
+        display: inline;
+        overflow: auto;
+    }
+    .img-type{
+        margin: 0;
+    }
+    .navbar-default .navbar-toggle{
+        border: none
+    }
+    .navbar-default .navbar-toggle .icon-bar{
+        background-color: #FDB813;
+    }
+    .navbar-brand img{
+        width: 60px
+    }
+    .navbar-default .navbar-toggle{
+        margin: 10px 20px;
+    }
+    .web-logo{
+        display: none;
+    }
+    .carousel{
+        margin: 20px;
+    } 
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:active{
+    background-color: #FDB813;
+    }
+    .navbar-default .navbar-toggle:hover .icon-bar,
+    .navbar-default .navbar-toggle:focus .icon-bar,
+    .navbar-default .navbar-toggle:active .icon-bar{
+        background-color: #0E5BA4
+    }
+    .carousel-caption{
+        right: 20px;
+        bottom: 40px;
+        height: auto;
+        left: 20px;
+        width: auto;
+        padding: 0 0 10px 0;
+    }
+    .carousel-caption a{
+        padding: 3px;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .carousel-caption p{
+        display: none
+    }
+    .carousel-indicators li {
+    width: 8px;
+    height: 8px
+    }
+    .carousel-inner,
+    .carousel-inner > .item img{
+        height: 250px;
+    }
+    .carousel-indicators{
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .carousel-control.left{
+        left: 0
+    }
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right{
+        height: 30px;
+        width: 30px; 
+    }
+    .prodects-search form select,
+    .prodects-search form input{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .prodects-search form{
+        margin-top: 10px;
+    }
+    .cars-type{
+            padding: 0;
+    margin: 20px 20px 0;
+    }
+    .img-type div{
+        width: 40%;
+        margin: 10px;
+        padding: 10px;
+    }
+    .img-type img{
+        width: 60px;
+        height: 60px;
+    }
+    .prodects-search{
+        margin: 20px;
+        padding: 20px;
+    }
+    .brand-type{
+        border: none;
+        padding: 0;
+        min-height: 0;
+    }
+    .web-header h2{
+        font-size: 15px
+    }
+    .web-header .products-header img{
+        width: 20px
+    }
+    .prodects{
+        max-width: none;
+        margin: 0 0 10px 0; 
+    }
+    .cars-brand{
+        margin-top: 20px
+    }
+    .footer{
+        padding: 20px;
+        text-align: center;
+    }
+    .footer p,
+    .footer p:first-child{
+        float: none;
+        font-size:12px;
+    }
+    .footer p:first-child{
+        margin-bottom: 10px
+    }
+    .navbar-default .navbar-nav > .active > a:before{
+        background: none;
+    }
+    .navbar-default .navbar-nav > .active > a{
+        color: #FFF
+    }
+    .navbar-default .navbar-nav > li.english{
+        display: none;
+    }
+    .navbar-default .navbar-collapse{
+        text-align: center;
+    }
+    .navbar-default .navbar-nav > .active > a > i,
+    .navbar-default .navbar-nav > li > a > i{
+        display: none
+    }
+    .navbar-default .navbar-nav > li.registry{
+        padding: 0 10px 0 25px;
+    }
+    .navbar-default .navbar-nav > li > a.reg{
+        border: 0;
+        padding: 15px 0;
+    }
+    .navbar-default .mob-english{
+        margin: 18px 59px;
+    color: rgba(253, 184, 19, 0.53);
+    }
+}
+
+@media screen and (min-width : 768px) and (max-width : 991px){
+    .web-logo img{
+        margin-top: 20px;
+    }
+    .carousel-caption p{
+        font-size: 15px;
+        line-height: 28px;
+               margin-bottom: 15px;
+    }
+   .carousel-caption{
+        right: 35px;
+    bottom: 70px;
+    height: auto;
+    left: 30px;
+    width: auto;
+    padding: 20px 15px;
+
+    }
+    .carousel-caption a{
+        padding: 5px;
+    }
+    .prodects-search form select,
+    .prodects-search form input{
+        margin: 10px 0;
+        width: 100%
+    }
+    .brand-type{
+        border: none;
+        padding: 0;
+        min-height: 0;
+    }
+    .web-header .products-header img{
+        width: 20px
+    }
+    .prodects{
+        max-width: none;
+        margin: 0 0 10px 0; 
+    }
+    .cars-brand{
+        margin-top: 20px
+    }
+}
+
+@media screen and (min-width : 992px) and (max-width : 1199px){
+    .carousel-caption{
+            right: 50px;
+    width: 90%;
+    }
+        .web-logo img{
+        margin-top: 20px;
+    }
+   
+}
